@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUREV 2025 - The Educational Revolution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glow {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+        .deep-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #06b6d4;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-cyan-400/20">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-cyan-400">EDUREV 2025</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Home</a>
+                <a href="#about" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">About</a>
+                <a href="#tracks" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Tracks</a>
+                <a href="#schedule" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Schedule</a>
+                <a href="#speakers" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Speakers</a>
+                <a href="#register" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Register</a>
+            </div>
+            <button id="hamburger" class="md:hidden text-cyan-400 focus:outline-none" aria-label="Toggle menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95 backdrop-blur-md border-t border-cyan-400/20">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="#home" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Home</a>
+                <a href="#about" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">About</a>
+                <a href="#tracks" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Tracks</a>
+                <a href="#schedule" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Schedule</a>
+                <a href="#speakers" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Speakers</a>
+                <a href="#register" class="nav-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-950 to-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+                <span class="text-cyan-400">EDUREV 2025:</span><br>Powering the Future of Learning
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                Annual Innovation Summit | LOVELY PROFESSIONAL UNIVERSITY | Oct 31, 2025
+            </p>
+            <a href="#register">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-3xl glow transition-all duration-300 animate-pulse">
+                    Secure Your Spot
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT & Highlights Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-cyan-400 mb-4">About EduRev Talent Hunt 2025</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                    A two-day compitition ,E-Certificates and Duty Leaves for all participants,Decision of judges/evalution panel will be final and bindind, And other benifits From University, Like CA Exemption For Winners.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-indigo-950 rounded-3xl p-8 text-center glow deep-shadow">
+                    <div class="text-6xl font-bold text-cyan-400 mb-2">5+</div>
+                    <div class="text-xl text-gray-300">Speakers</div>
+                </div>
+                <div class="bg-indigo-950 rounded-3xl p-8 text-center glow deep-shadow">
+                    <div class="text-6xl font-bold text-purple-400 mb-2">3</div>
+                    <div class="text-xl text-gray-300">Innovation Tracks</div>
+                </div>
+                <div class="bg-indigo-950 rounded-3xl p-8 text-center glow deep-shadow">
+                    <div class="text-6xl font-bold text-cyan-400 mb-2"> CA + DL + Other Benefits</div>
+                    <div class="text-xl text-gray-300">In Prizes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Tracks Section -->
+    <section id="tracks" class="py-20 bg-indigo-950">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Innovation Tracks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 rounded-3xl p-8 text-center glow deep-shadow hover:transform hover:scale-105 transition-transform duration-300">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-white mb-2">PROJECT EXPO</h3>
+                    <p class="text-gray-300">Showcase innovative projects and ideas in a competitive expo format.</p>
+                </div>
+                <div class="bg-gray-900 rounded-3xl p-8 text-center glow deep-shadow hover:transform hover:scale-105 transition-transform duration-300">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-white mb-2">AI MODEL CHALLENGE</h3>
+                    <p class="text-gray-300">Compete in building and optimizing AI models for real-world applications.</p>
+                </div>
+                <div class="bg-gray-900 rounded-3xl p-8 text-center glow deep-shadow hover:transform hover:scale-105 transition-transform duration-300">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 17V7h2v10H3zm4 0V7h2v10H7zm4 0V7h2v10h-2zm4 0V7h2v10h-2z"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-white mb-2">CODE WARs</h3>
+                    <p class="text-gray-300">Competitive Codind Challenge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Event Schedule</h2>
+            <div class="flex justify-center mb-8 flex-wrap gap-4">
+                <button id="day1-tab" class="tab-button active bg-cyan-400 text-gray-900 px-6 py-2 rounded-3xl font-bold">Day 1</button>
+                <button id="day2-tab" class="tab-button bg-gray-700 text-white px-6 py-2 rounded-3xl font-bold">Day 2</button>
+            </div>
+            <div id="day1-content" class="tab-content">
+                <div class="bg-indigo-950 rounded-3xl p-8 glow deep-shadow">
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <div class="w-20 text-cyan-400 font-bold">9:00 to 11:30 AM</div>
+                            <div class="text-white ml-4">PROJECT EXPO</div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-20 text-cyan-400 font-bold">12:00 to 2:30 PM</div>
+                            <div class="text-white ml-4">AI MODEL CHALLENGE</div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-20 text-cyan-400 font-bold">3:00 to 5:30 PM</div>
+                            <div class="text-white ml-4">Code Wars</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="day2-content" class="tab-content hidden">
+                <div class="bg-indigo-950 rounded-3xl p-8 glow deep-shadow">
+                    <p class="text-gray-300 text-center">Schedule for Day 2 coming soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="py-20 bg-indigo-950">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Featured Speakers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-900 rounded-3xl p-6 text-center glow deep-shadow">
+                    <img src="https://placehold.co/" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-white">Dr. Arpit</h3>
+                    <p class="text-gray-300">Lead Data Scientist at FutureCorp</p>
+                </div>
+                <div class="bg-gray-900 rounded-3xl p-6 text-center glow deep-shadow">
+                    <img src="https://placehold.co/" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-white">Prof. Rohit Kumar </h3>
+                    <p class="text-gray-300">Director of Innovation at TechEdu Institute</p>
+                </div>
+                <div class="bg-gray-900 rounded-3xl p-6 text-center glow deep-shadow col-span-1 md:col-span-2">
+                    <img src="https://placehold.co/" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-white">Mr. Avinash </h3>
+                    <p class="text-gray-300">CEO of GreenTech Solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-md">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Register Now</h2>
+            <form class="bg-indigo-950 rounded-3xl p-8 glow deep-shadow" onsubmit="alert('Registration submitted!'); return false;">
+                <div class="mb-4">
+                    <label class="block text-gray-300 mb-2">Name</label>
+                    <input type="text" required class="w-full px-4 py-2 bg-gray-800 rounded-3xl text-white focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-300 mb-2">College/University</label>
+                    <input type="text" required class="w-full px-4 py-2 bg-gray-800 rounded-3xl text-white focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-300 mb-2">Registration No.</label>
+                    <input type="text" required class="w-full px-4 py-2 bg-gray-800 rounded-3xl text-white focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-300 mb-2">Email Address</label>
+                    <input type="email" required class="w-full px-4 py-2 bg-gray-800 rounded-3xl text-white focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-300 mb-2">Track Preference</label>
+                    <select required class="w-full px-4 py-2 bg-gray-800 rounded-3xl text-white focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                        <option value="">Select Track</option>
+                        <option>PROJECT EXPO</option>
+                        <option>AI MODEL CHALLENGE</option>
+                        <option>Code Wars</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-3xl glow transition-all duration-300">
+                    Registration Now
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-950 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-300 mb-4">© 2025 EDUREV Summit. All rights reserved.</p>
+            <p class="text-gray-300 mb-4">Contact: <a href="mailto:info@edurev2025.com" class="text-cyan-400 hover:underline">info@edurev2025.com</a></p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-cyan-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zM7.119 20.452H3.266V9h3.853v11.452z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-cyan-400 hover:text-white transition-colors" aria-label="Twitter">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tab Switching
+        const day1Tab = document.getElementById('day1-tab');
+        const day2Tab = document.getElementById('day2-tab');
+        const day1Content = document.getElementById('day1-content');
+        const day2Content = document.getElementById('day2-content');
+
+        day1Tab.addEventListener('click', () => {
+            day1Tab.classList.add('bg-cyan-400', 'text-gray-900');
+            day1Tab.classList.remove('bg-gray-700', 'text-white');
+            day2Tab.classList.remove('bg-cyan-400', 'text-gray-900');
+            day2Tab.classList.add('bg-gray-700', 'text-white');
+            day1Content.classList.remove('hidden');
+            day2Content.classList.add('hidden');
+        });
+
+        day2Tab.addEventListener('click', () => {
+            day2Tab.classList.add('bg-cyan-400', 'text-gray-900');
+            day2Tab.classList.remove('bg-gray-700', 'text-white');
+            day1Tab.classList.remove('bg-cyan-400', 'text-gray-900');
+            day1Tab.classList.add('bg-gray-700', 'text-white');
+            day2Content.classList.remove('hidden');
+            day1Content.classList.add('hidden');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                if (mobileMenu.classList.contains('hidden') === false) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
